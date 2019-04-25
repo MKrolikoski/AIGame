@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34a7c8ca992f915438a96c2077353778, type: 3}
+  m_Name: TestTree
+  m_EditorClassIdentifier: 
+  brickName: Assets/Behaviors/TestTree.asset
+  xml: "\uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<BehaviorBricks xmlns:ref=\"urn:padaone\"
+    version=\"1.0\">\r\n  <BehaviorTree id=\"0\" />\r\n  <runtimeInfo>\r\n    <BehaviorTree
+    id=\"0\" guid=\"063eea583c12efa42a56f4625dcad8d4\" nextId=\"2\">\r\n      <root>\r\n
+    \       <ConditionNode id=\"1\" />\r\n      </root>\r\n      <inputParams>\r\n
+    \       <inputValues>\r\n          <entry name=\"UnitType\" type=\"Unit\" isBlackboard=\"False\"
+    />\r\n        </inputValues>\r\n      </inputParams>\r\n      <outputParams />\r\n
+    \     <localParams />\r\n    </BehaviorTree>\r\n    <ConditionNode id=\"1\">\r\n
+    \     <condition>\r\n        <ConditionEvalNode id=\"0\" />\r\n      </condition>\r\n
+    \     <inputParams>\r\n        <inputValues>\r\n          <entry name=\"UnitType\"
+    type=\"Unit\" isBlackboard=\"True\" blackboard=\"UnitType\" />\r\n        </inputValues>\r\n
+    \     </inputParams>\r\n      <outputParams />\r\n      <localParams />\r\n    </ConditionNode>\r\n
+    \   <ConditionEvalNode id=\"0\" policy=\"ATOMIC_CHECK\" name=\"Custom/Conditions/UnitOfType\">\r\n
+    \     <inputParams />\r\n      <outputParams />\r\n      <localParams />\r\n    </ConditionEvalNode>\r\n
+    \ </runtimeInfo>\r\n  <editorInfo>\r\n    <BehaviorTree id=\"0\" _name=\"TestTree\"
+    _description=\"\" _removeIfClosed=\"False\">\r\n      <_rootList>\r\n        <elem>\r\n
+    \         <ConditionNode id=\"1\" />\r\n        </elem>\r\n      </_rootList>\r\n
+    \     <_nodes>\r\n        <nodes>\r\n          <ConditionNode id=\"1\" />\r\n
+    \       </nodes>\r\n      </_nodes>\r\n    </BehaviorTree>\r\n    <ConditionNode
+    id=\"1\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
+    position=\"314.1595 151.3889\" name=\"Custom/Conditions/UnitOfType\" description=\"Check
+    whether unit is of specified type\" cardinality=\"0\" hasParent=\"False\">\r\n
+    \         <BehaviorTree id=\"0\" />\r\n          <ConditionNode id=\"1\" />\r\n
+    \       </data>\r\n      </_data>\r\n    </ConditionNode>\r\n    <ConditionEvalNode
+    id=\"0\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
+    position=\"0 0\" name=\"AlwaysTrue\" description=\"Eval\" cardinality=\"1\" hasParent=\"False\">\r\n
+    \         <BehaviorTree id=\"0\" />\r\n        </data>\r\n      </_data>\r\n    </ConditionEvalNode>\r\n
+    \ </editorInfo>\r\n</BehaviorBricks>"
+  zoom: 0.7
+  subslist: []
+  _guid: 063eea583c12efa42a56f4625dcad8d4

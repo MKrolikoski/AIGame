@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34a7c8ca992f915438a96c2077353778, type: 3}
+  m_Name: AIEndTurnTree
+  m_EditorClassIdentifier: 
+  brickName: Assets/Behaviors/AIEndTurnTree.asset
+  xml: "\uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<BehaviorBricks xmlns:ref=\"urn:padaone\"
+    version=\"1.0\">\r\n  <BehaviorTree id=\"0\" />\r\n  <runtimeInfo>\r\n    <BehaviorTree
+    id=\"0\" guid=\"52baf132c304ae54893ecb39872ad0b4\" nextId=\"16\">\r\n      <root>\r\n
+    \       <SequenceNode id=\"1\" />\r\n      </root>\r\n      <inputParams />\r\n
+    \     <outputParams />\r\n      <localParams />\r\n    </BehaviorTree>\r\n    <SequenceNode
+    id=\"1\">\r\n      <children>\r\n        <elem>\r\n          <ConditionNode id=\"11\"
+    />\r\n        </elem>\r\n        <elem>\r\n          <DecoratorGuard id=\"13\"
+    />\r\n        </elem>\r\n      </children>\r\n      <inputParams />\r\n      <outputParams
+    />\r\n      <localParams />\r\n    </SequenceNode>\r\n    <ConditionNode id=\"11\">\r\n
+    \     <condition>\r\n        <ConditionEvalNode id=\"0\" />\r\n      </condition>\r\n
+    \     <inputParams />\r\n      <outputParams />\r\n      <localParams />\r\n    </ConditionNode>\r\n
+    \   <DecoratorGuard id=\"13\">\r\n      <guard>\r\n        <ConditionEvalNode
+    id=\"14\" />\r\n      </guard>\r\n      <child>\r\n        <ActionNode id=\"15\"
+    />\r\n      </child>\r\n      <inputParams />\r\n      <outputParams />\r\n      <localParams
+    />\r\n    </DecoratorGuard>\r\n    <ConditionEvalNode id=\"0\" policy=\"ATOMIC_CHECK\"
+    name=\"Custom/Conditions/IsInputEnabled\">\r\n      <inputParams />\r\n      <outputParams
+    />\r\n      <localParams />\r\n    </ConditionEvalNode>\r\n    <ConditionEvalNode
+    id=\"14\" policy=\"WAIT_UNTIL_FALSE_AND_FAIL\" name=\"Custom/Conditions/PlayerDoesntHaveAvailableMoves\">\r\n
+    \     <inputParams>\r\n        <inputValues>\r\n          <entry name=\"AI\" type=\"AI\"
+    isBlackboard=\"True\" blackboard=\"AI\" />\r\n        </inputValues>\r\n      </inputParams>\r\n
+    \     <outputParams />\r\n      <localParams />\r\n    </ConditionEvalNode>\r\n
+    \   <ActionNode id=\"15\" action=\"Custom/Actions/EndTurn\">\r\n      <inputParams>\r\n
+    \       <inputValues>\r\n          <entry name=\"AI\" type=\"AI\" isBlackboard=\"True\"
+    blackboard=\"AI\" />\r\n        </inputValues>\r\n      </inputParams>\r\n      <outputParams
+    />\r\n      <localParams />\r\n    </ActionNode>\r\n  </runtimeInfo>\r\n  <editorInfo>\r\n
+    \   <BehaviorTree id=\"0\" _name=\"AIEndTurnTree\" _description=\"\" _removeIfClosed=\"False\">\r\n
+    \     <_rootList>\r\n        <elem>\r\n          <SequenceNode id=\"1\" />\r\n
+    \       </elem>\r\n        <elem>\r\n          <ConditionNode id=\"11\" />\r\n
+    \       </elem>\r\n        <elem>\r\n          <DecoratorGuard id=\"13\" />\r\n
+    \       </elem>\r\n        <elem>\r\n          <ConditionEvalNode id=\"14\" />\r\n
+    \       </elem>\r\n        <elem>\r\n          <ActionNode id=\"15\" />\r\n        </elem>\r\n
+    \     </_rootList>\r\n      <_nodes>\r\n        <nodes>\r\n          <SequenceNode
+    id=\"1\" />\r\n          <ConditionNode id=\"11\" />\r\n          <DecoratorGuard
+    id=\"13\" />\r\n          <ConditionEvalNode id=\"14\" />\r\n          <ActionNode
+    id=\"15\" />\r\n        </nodes>\r\n      </_nodes>\r\n    </BehaviorTree>\r\n
+    \   <SequenceNode id=\"1\">\r\n      <_data>\r\n        <data breakpoint=\"0\"
+    selected=\"False\" position=\"534.9361 314.4207\" name=\"Sequence\" description=\"Executes
+    all its children in sequence until all of them are successful\" cardinality=\"-1\"
+    hasParent=\"False\">\r\n          <BehaviorTree id=\"0\" />\r\n          <SequenceNode
+    id=\"1\" />\r\n        </data>\r\n      </_data>\r\n    </SequenceNode>\r\n    <ConditionNode
+    id=\"11\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
+    position=\"229.7717 470.4524\" name=\"Custom/Conditions/IsInputEnabled\" description=\"Check
+    whether inputs are enabled and player can make decisions\" cardinality=\"0\" hasParent=\"True\">\r\n
+    \         <BehaviorTree id=\"0\" />\r\n          <ConditionNode id=\"11\" />\r\n
+    \         <SequenceNode id=\"1\" />\r\n        </data>\r\n      </_data>\r\n    </ConditionNode>\r\n
+    \   <DecoratorGuard id=\"13\">\r\n      <_data>\r\n        <data breakpoint=\"0\"
+    selected=\"False\" position=\"688.6286 446.7383\" name=\"Guard\" description=\"Guard\"
+    cardinality=\"1\" hasParent=\"True\">\r\n          <BehaviorTree id=\"0\" />\r\n
+    \         <DecoratorGuard id=\"13\" />\r\n          <SequenceNode id=\"1\" />\r\n
+    \       </data>\r\n      </_data>\r\n    </DecoratorGuard>\r\n    <ConditionEvalNode
+    id=\"0\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
+    position=\"0 0\" name=\"AlwaysTrue\" description=\"Eval\" cardinality=\"1\" hasParent=\"False\">\r\n
+    \         <BehaviorTree id=\"0\" />\r\n        </data>\r\n      </_data>\r\n    </ConditionEvalNode>\r\n
+    \   <ConditionEvalNode id=\"14\">\r\n      <_data>\r\n        <data breakpoint=\"0\"
+    selected=\"False\" position=\"688.6286 446.7383\" name=\"Custom/Conditions/PlayerDoesntHaveAvailableMoves\"
+    description=\"Eval\" cardinality=\"1\" hasParent=\"False\">\r\n          <BehaviorTree
+    id=\"0\" />\r\n          <ConditionEvalNode id=\"14\" />\r\n        </data>\r\n
+    \     </_data>\r\n    </ConditionEvalNode>\r\n    <ActionNode id=\"15\">\r\n      <_data>\r\n
+    \       <data breakpoint=\"0\" selected=\"False\" position=\"688.6286 446.7383\"
+    name=\"Custom/Actions/EndTurn\" description=\"AI ends their turn\" cardinality=\"0\"
+    hasParent=\"False\">\r\n          <BehaviorTree id=\"0\" />\r\n          <ActionNode
+    id=\"15\" />\r\n        </data>\r\n      </_data>\r\n    </ActionNode>\r\n  </editorInfo>\r\n</BehaviorBricks>"
+  zoom: 0.5
+  subslist: []
+  _guid: 52baf132c304ae54893ecb39872ad0b4
