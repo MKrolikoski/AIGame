@@ -23,3 +23,8 @@ Turn-based game created for my university project. Implements behavior trees in 
 7. How do I end turn?
 - click the button in the bottom of the screen saying "end turn".
 ==========================================
+
+# Preview
+
+![GameplayScreenshot1](/Assets/Screenshots/GameplayScreenshot1.png)
+![GameplayScreenshot2](/Assets/Screenshots/GameplayScreenshot2.png)
