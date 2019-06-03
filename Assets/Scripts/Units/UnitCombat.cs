@@ -24,9 +24,6 @@ public class UnitCombat : MonoBehaviour
 
     public void Attack(Unit target, bool rangedAttack)
     {
-        UnitSkills skills = GetComponent<UnitSkills>();
-        if (skills.CanUseOffensiveSkill())
-            skills.UseOffensiveSkill();
         enemyStats = target.stats;
         target.ShowHp();
         this.rangedAttack = rangedAttack;

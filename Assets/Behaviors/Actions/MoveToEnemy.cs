@@ -61,13 +61,11 @@ public class MoveToEnemy : BasePrimitiveAction
 
     private List<Tile> CheckShorterPath(List<Tile> pathToMove)
     {
-        //if (selectedUnit.unitCombat.EnemyInAttackRange(enemy, AI.instance.attackMask))
-        if (selectedUnit.unitCombat.EnemyInAttackRange(enemy, selectedUnit.unitOwner.attackMask))
+        if (selectedUnit.unitCombat.EnemyInAttackRange(enemy, AI.instance.attackMask))
             return new List<Tile>();
         for (int i = 0; i < pathToMove.Count; i++)
         {
-            //if (selectedUnit.unitCombat.EnemyInAttackRangeFromTile(enemy, pathToMove[i], AI.instance.attackMask))
-            if (selectedUnit.unitCombat.EnemyInAttackRangeFromTile(enemy, pathToMove[i], selectedUnit.unitOwner.attackMask))
+            if (selectedUnit.unitCombat.EnemyInAttackRangeFromTile(enemy, pathToMove[i], AI.instance.attackMask))
             {
                 return pathToMove.GetRange(0, i+1);
             }

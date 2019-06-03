@@ -22,8 +22,7 @@ public class SelectFoundUnit : BasePrimitiveAction
             return TaskStatus.FAILED;
         }
         GameManager.instance.SelectedUnit = selectedUnit;
-        selectedUnit.unitOwner.checkedUnits = new List<Unit>();
-        //AI.instance.checkedUnits = new List<Unit>();
+        AI.instance.checkedUnits = new List<Unit>();
         return TaskStatus.COMPLETED;
     }
 }

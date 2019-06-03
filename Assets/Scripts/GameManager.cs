@@ -32,7 +32,6 @@ public class GameManager : MonoBehaviour
     public Commander[] players;
     //Active player
     public Commander _activePlayer;
-    public Commander _inactivePlayer;
     //Layer mask used when looking for enemies in unit's attack range
     public LayerMask attackRangeMask;
     //Event fired when selecting unit
@@ -52,7 +51,6 @@ public class GameManager : MonoBehaviour
         }
         private set
         {
-            _inactivePlayer = _activePlayer;
             _activePlayer = value;
             attackRangeMask = _activePlayer.attackMask;
         }

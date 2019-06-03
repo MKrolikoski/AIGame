@@ -3,9 +3,8 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -49,17 +48,17 @@ MonoBehaviour:
     id=\"13\" />\r\n          <ConditionEvalNode id=\"14\" />\r\n          <ActionNode
     id=\"15\" />\r\n        </nodes>\r\n      </_nodes>\r\n    </BehaviorTree>\r\n
     \   <SequenceNode id=\"1\">\r\n      <_data>\r\n        <data breakpoint=\"0\"
-    selected=\"False\" position=\"534.9361 314.4207\" name=\"Sequence\" description=\"Executes
+    selected=\"False\" position=\"474.9361 284.4207\" name=\"Sequence\" description=\"Executes
     all its children in sequence until all of them are successful\" cardinality=\"-1\"
     hasParent=\"False\">\r\n          <BehaviorTree id=\"0\" />\r\n          <SequenceNode
     id=\"1\" />\r\n        </data>\r\n      </_data>\r\n    </SequenceNode>\r\n    <ConditionNode
     id=\"11\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
-    position=\"229.7717 470.4524\" name=\"Custom/Conditions/IsInputEnabled\" description=\"Check
+    position=\"169.7717 440.4524\" name=\"Custom/Conditions/IsInputEnabled\" description=\"Check
     whether inputs are enabled and player can make decisions\" cardinality=\"0\" hasParent=\"True\">\r\n
     \         <BehaviorTree id=\"0\" />\r\n          <ConditionNode id=\"11\" />\r\n
     \         <SequenceNode id=\"1\" />\r\n        </data>\r\n      </_data>\r\n    </ConditionNode>\r\n
     \   <DecoratorGuard id=\"13\">\r\n      <_data>\r\n        <data breakpoint=\"0\"
-    selected=\"False\" position=\"688.6286 446.7383\" name=\"Guard\" description=\"Guard\"
+    selected=\"False\" position=\"628.6286 416.7383\" name=\"Guard\" description=\"Guard\"
     cardinality=\"1\" hasParent=\"True\">\r\n          <BehaviorTree id=\"0\" />\r\n
     \         <DecoratorGuard id=\"13\" />\r\n          <SequenceNode id=\"1\" />\r\n
     \       </data>\r\n      </_data>\r\n    </DecoratorGuard>\r\n    <ConditionEvalNode
@@ -67,11 +66,11 @@ MonoBehaviour:
     position=\"0 0\" name=\"AlwaysTrue\" description=\"Eval\" cardinality=\"1\" hasParent=\"False\">\r\n
     \         <BehaviorTree id=\"0\" />\r\n        </data>\r\n      </_data>\r\n    </ConditionEvalNode>\r\n
     \   <ConditionEvalNode id=\"14\">\r\n      <_data>\r\n        <data breakpoint=\"0\"
-    selected=\"False\" position=\"688.6286 446.7383\" name=\"Custom/Conditions/PlayerDoesntHaveAvailableMoves\"
+    selected=\"False\" position=\"628.6286 416.7383\" name=\"Custom/Conditions/PlayerDoesntHaveAvailableMoves\"
     description=\"Eval\" cardinality=\"1\" hasParent=\"False\">\r\n          <BehaviorTree
     id=\"0\" />\r\n          <ConditionEvalNode id=\"14\" />\r\n        </data>\r\n
     \     </_data>\r\n    </ConditionEvalNode>\r\n    <ActionNode id=\"15\">\r\n      <_data>\r\n
-    \       <data breakpoint=\"0\" selected=\"False\" position=\"688.6286 446.7383\"
+    \       <data breakpoint=\"0\" selected=\"False\" position=\"628.6286 416.7383\"
     name=\"Custom/Actions/EndTurn\" description=\"AI ends their turn\" cardinality=\"0\"
     hasParent=\"False\">\r\n          <BehaviorTree id=\"0\" />\r\n          <ActionNode
     id=\"15\" />\r\n        </data>\r\n      </_data>\r\n    </ActionNode>\r\n  </editorInfo>\r\n</BehaviorBricks>"

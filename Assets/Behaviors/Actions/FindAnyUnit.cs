@@ -26,12 +26,10 @@ public class FindAnyUnit : BasePrimitiveAction
 
     private Unit FindNotCheckedUnit()
     {
-        //Unit[] units = AI.instance.units.ToArray();
-        Unit[] units = GameManager.instance.ActivePlayer.units.ToArray();
+        Unit[] units = AI.instance.units.ToArray();
         for (int i = 0; i < units.Length; i++)
         {
-            //if (units[i].canBeSelected && !AI.instance.checkedUnits.Contains(units[i]))
-            if (units[i].canBeSelected && !GameManager.instance.ActivePlayer.checkedUnits.Contains(units[i]))
+            if (units[i].canBeSelected && !AI.instance.checkedUnits.Contains(units[i]))
             {
                 return units[i];
             }
@@ -41,8 +39,7 @@ public class FindAnyUnit : BasePrimitiveAction
 
     private Unit FindUnit()
     {
-        //Unit[] units = AI.instance.checkedUnits.ToArray();
-        Unit[] units = GameManager.instance.ActivePlayer.units.ToArray();
+        Unit[] units = AI.instance.checkedUnits.ToArray();
         for (int i = 0; i < units.Length; i++)
         {
             if (units[i].canBeSelected)
@@ -55,8 +52,7 @@ public class FindAnyUnit : BasePrimitiveAction
 
     private Unit FindEssentialUnit()
     {
-        Unit[] units = GameManager.instance.ActivePlayer.units.ToArray();
-        //Unit[] units = AI.instance.units.ToArray();
+        Unit[] units = AI.instance.units.ToArray();
         for (int i = 0; i < units.Length; i++)
         {
             if (units[i].isEssential && units[i].canBeSelected)

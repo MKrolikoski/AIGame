@@ -11,14 +11,10 @@ public class Commander : MonoBehaviour {
     public LayerMask attackMask;
     public List<Unit> units;
 
-    public List<Unit> checkedUnits;
-
-
     protected virtual void Awake()
     {
-        availableMovesInTurn = 3;
+        availableMovesInTurn = 2;
         units = new List<Unit>(GetComponentsInChildren<Unit>());
-        checkedUnits = new List<Unit>();
     }
     protected virtual void Start ()
     {

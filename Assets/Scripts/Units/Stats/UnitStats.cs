@@ -59,8 +59,6 @@ public class UnitStats : MonoBehaviour {
 
     protected virtual void OnDeath()
     {
-        Unit unit = GetComponent<Unit>();
-        unit.unitOwner.units.Remove(unit);
         GetComponent<Unit>().currentTile.ChangeSelectionToDefault();
     }
 

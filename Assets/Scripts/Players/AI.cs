@@ -6,7 +6,7 @@ public class AI : Commander
 {
 
     public static AI instance;
-    //public List<Unit> checkedUnits;
+    public List<Unit> checkedUnits;
 
     protected override void Awake()
     {
@@ -14,7 +14,7 @@ public class AI : Commander
         if (instance != null)
             return;
         instance = this;
-        //checkedUnits = new List<Unit>();
+        checkedUnits = new List<Unit>();
     }
 
     protected override void Start()

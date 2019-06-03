@@ -24,6 +24,7 @@ public class PathManager : MonoBehaviour
 
     public List<Tile> FindPath(Tile startingTile, Tile selectedTile, int unitRange)
     {
+        //selectedTile = CheckSelectedTile(startingTile, selectedTile);
         List<Tile> openList = new List<Tile>();
         HashSet<Tile> closedList = new HashSet<Tile>();
 
@@ -65,31 +66,30 @@ public class PathManager : MonoBehaviour
                 {
                     neighbouringTile.gCost = moveCost;
                     neighbouringTile.hCost = GetManhattanDistance(neighbouringTile, selectedTile);
-                    neighbouringTile.parent = currentTile;                   
+                    neighbouringTile.parent = currentTile;
+                    
                     if(!openList.Contains(neighbouringTile))
                     {
                         openList.Add(neighbouringTile);
                     }
                 } 
             }
+
         }
         return currentPath;
     }
 
     private int GetManhattanDistance(Tile a, Tile b)
     {
-        int ix = Mathf.Abs(Mathf.RoundToInt(a.transform.position.x - b.transform.position.x));
-        int iz = Mathf.Abs(Mathf.RoundToInt(a.transform.position.z - b.transform.position.z));
-
         int distance = Mathf.Abs(Mathf.RoundToInt((a.transform.position.x - b.transform.position.x) / 4)) + Mathf.Abs(Mathf.RoundToInt((a.transform.position.z - b.transform.position.z) / 4));
-        return ix + iz;
+        return distance;
     }
 
     private void GetFinalPath(Tile startingTile, Tile selectedTile, int unitRange)
     {
         List<Tile> finalPath = new List<Tile>();
         Tile currentTile;
-        if (!selectedTile.walkable && selectedTile.parent != null)
+        if (!selectedTile.walkable)
             currentTile = selectedTile.parent;
         else
             currentTile = selectedTile;

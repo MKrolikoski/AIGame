@@ -29,8 +29,7 @@ public class EssentialUnitInRange : ConditionBase
 
     private bool IsEssentialUnitInRange()
     {
-        //Unit[] enemies = Player.instance.units.ToArray();
-        Unit[] enemies = GameManager.instance._inactivePlayer.units.ToArray();
+        Unit[] enemies = Player.instance.units.ToArray();
         for (int i = 0; i < enemies.Length; i++)
         {
             if (enemies[i].isEssential && selectedUnit.unitCombat.DistanceToEnemy(enemies[i]) <= essentialUnitMaxDistance)

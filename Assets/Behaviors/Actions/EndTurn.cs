@@ -10,7 +10,7 @@ public class EndTurn : BasePrimitiveAction
     public override TaskStatus OnUpdate()
     {
         Commander activePlayer = GameManager.instance.ActivePlayer;
-        if(activePlayer.GetType() == typeof(AI) || activePlayer.GetType() == typeof(XTT2AI))
+        if(activePlayer.GetType() == typeof(AI))
         {
             GameManager.instance.EndTurn();
             return TaskStatus.COMPLETED;

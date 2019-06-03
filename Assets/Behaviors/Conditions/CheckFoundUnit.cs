@@ -13,17 +13,14 @@ public class CheckFoundUnit : ConditionBase
 
     public override bool Check()
     {
-        //if (selectedUnit.isEssential || AI.instance.checkedUnits.Contains(selectedUnit))
-        if (selectedUnit.isEssential || selectedUnit.unitOwner.checkedUnits.Contains(selectedUnit))
+        if (selectedUnit.isEssential || AI.instance.checkedUnits.Contains(selectedUnit))
         {
             return true;
         }
-        //List<Unit> enemies = selectedUnit.unitCombat.EnemiesInAttackRange(AI.instance.attackMask);
-        List<Unit> enemies = selectedUnit.unitCombat.EnemiesInAttackRange(selectedUnit.unitOwner.attackMask);
+        List<Unit> enemies = selectedUnit.unitCombat.EnemiesInAttackRange(AI.instance.attackMask);
         if (enemies.Count == 0)
         {
-            selectedUnit.unitOwner.checkedUnits.Add(selectedUnit);
-            //AI.instance.checkedUnits.Add(selectedUnit);
+            AI.instance.checkedUnits.Add(selectedUnit);
             return false;
         }
         return true;

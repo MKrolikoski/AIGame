@@ -4,7 +4,6 @@ using UnityEngine;
 public class Player : Commander
 {
     public static Player instance;
-    public int outlineColor;
 
     protected override void Awake()
     {
@@ -27,7 +26,7 @@ public class Player : Commander
     {
         base.InitUnits();
         units.ForEach(u => {
-            u.GetComponentInChildren<Outline>().color = outlineColor;
+            u.GetComponentInChildren<Outline>().color = 1;
             u.unitOwner = this;
         });
     }

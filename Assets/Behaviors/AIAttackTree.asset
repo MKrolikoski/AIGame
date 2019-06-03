@@ -3,9 +3,8 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -78,42 +77,42 @@ MonoBehaviour:
     />\r\n          <ActionNode id=\"7\" />\r\n          <ActionNode id=\"8\" />\r\n
     \       </nodes>\r\n      </_nodes>\r\n    </BehaviorTree>\r\n    <SequenceNode
     id=\"1\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
-    position=\"720.515 236.9643\" name=\"Sequence\" description=\"Executes all its
+    position=\"656.515 68.96432\" name=\"Sequence\" description=\"Executes all its
     children in sequence until all of them are successful\" cardinality=\"-1\" hasParent=\"False\">\r\n
     \         <BehaviorTree id=\"0\" />\r\n          <SequenceNode id=\"1\" />\r\n
     \       </data>\r\n      </_data>\r\n    </SequenceNode>\r\n    <ActionNode id=\"2\">\r\n
-    \     <_data>\r\n        <data breakpoint=\"0\" selected=\"False\" position=\"370.5145
-    389.6308\" name=\"Custom/Actions/FindNearestEnemy\" description=\"Finds nearest
+    \     <_data>\r\n        <data breakpoint=\"0\" selected=\"False\" position=\"306.5145
+    221.6308\" name=\"Custom/Actions/FindNearestEnemy\" description=\"Finds nearest
     enemy\" cardinality=\"0\" hasParent=\"True\">\r\n          <BehaviorTree id=\"0\"
     />\r\n          <ActionNode id=\"2\" />\r\n          <SequenceNode id=\"1\" />\r\n
     \       </data>\r\n      </_data>\r\n    </ActionNode>\r\n    <SelectorNode id=\"4\">\r\n
-    \     <_data>\r\n        <data breakpoint=\"0\" selected=\"False\" position=\"859.0005
-    389.6671\" name=\"Selector\" description=\"Executes all its children until one
+    \     <_data>\r\n        <data breakpoint=\"0\" selected=\"False\" position=\"795.0005
+    221.6671\" name=\"Selector\" description=\"Executes all its children until one
     of them is successful\" cardinality=\"-1\" hasParent=\"True\">\r\n          <BehaviorTree
     id=\"0\" />\r\n          <SelectorNode id=\"4\" />\r\n          <SequenceNode
     id=\"1\" />\r\n        </data>\r\n      </_data>\r\n    </SelectorNode>\r\n    <SequenceNode
     id=\"5\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
-    position=\"705.6666 539.667\" name=\"Sequence\" description=\"Executes all its
+    position=\"641.6666 371.667\" name=\"Sequence\" description=\"Executes all its
     children in sequence until all of them are successful\" cardinality=\"-1\" hasParent=\"True\">\r\n
     \         <BehaviorTree id=\"0\" />\r\n          <SequenceNode id=\"5\" />\r\n
     \         <SelectorNode id=\"4\" />\r\n        </data>\r\n      </_data>\r\n    </SequenceNode>\r\n
     \   <ActionNode id=\"3\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
-    position=\"1050.67 562.7621\" name=\"Custom/Actions/AttackEnemy\" description=\"Attacks
+    position=\"986.6699 394.7621\" name=\"Custom/Actions/AttackEnemy\" description=\"Attacks
     enemy\" cardinality=\"0\" hasParent=\"True\">\r\n          <BehaviorTree id=\"0\"
     />\r\n          <ActionNode id=\"3\" />\r\n          <SelectorNode id=\"4\" />\r\n
     \       </data>\r\n      </_data>\r\n    </ActionNode>\r\n    <ConditionNode id=\"6\">\r\n
-    \     <_data>\r\n        <data breakpoint=\"0\" selected=\"False\" position=\"302.3339
-    696.3333\" name=\"Custom/Conditions/CanUseOffensivePotion\" description=\"Check
+    \     <_data>\r\n        <data breakpoint=\"0\" selected=\"False\" position=\"238.3339
+    528.3333\" name=\"Custom/Conditions/CanUseOffensivePotion\" description=\"Check
     whether selected unit can use offensive potion\" cardinality=\"0\" hasParent=\"True\">\r\n
     \         <BehaviorTree id=\"0\" />\r\n          <ConditionNode id=\"6\" />\r\n
     \         <SequenceNode id=\"5\" />\r\n        </data>\r\n      </_data>\r\n    </ConditionNode>\r\n
     \   <ActionNode id=\"7\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
-    position=\"635.6657 699.6666\" name=\"Custom/Actions/UseOffensivePotion\" description=\"Selected
+    position=\"571.6657 531.6666\" name=\"Custom/Actions/UseOffensivePotion\" description=\"Selected
     unit uses offensive potion\" cardinality=\"0\" hasParent=\"True\">\r\n          <BehaviorTree
     id=\"0\" />\r\n          <ActionNode id=\"7\" />\r\n          <SequenceNode id=\"5\"
     />\r\n        </data>\r\n      </_data>\r\n    </ActionNode>\r\n    <ActionNode
     id=\"8\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
-    position=\"932.3327 701.3334\" name=\"Custom/Actions/AttackEnemy\" description=\"Attacks
+    position=\"868.3327 533.3334\" name=\"Custom/Actions/AttackEnemy\" description=\"Attacks
     enemy\" cardinality=\"0\" hasParent=\"True\">\r\n          <BehaviorTree id=\"0\"
     />\r\n          <ActionNode id=\"8\" />\r\n          <SequenceNode id=\"5\" />\r\n
     \       </data>\r\n      </_data>\r\n    </ActionNode>\r\n    <ConditionEvalNode

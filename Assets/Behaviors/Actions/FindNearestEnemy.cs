@@ -39,8 +39,7 @@ public class FindNearestEnemy : BasePrimitiveAction
 
     private Unit FindClosestEnemy()
     {
-        List<Unit> enemies = selectedUnit.unitCombat.EnemiesInAttackRange(selectedUnit.unitOwner.attackMask);
-        //List<Unit> enemies = selectedUnit.unitCombat.EnemiesInAttackRange(AI.instance.attackMask);
+        List<Unit> enemies = selectedUnit.unitCombat.EnemiesInAttackRange(AI.instance.attackMask);
         if(enemies.Count == 0)
         {
             Debug.Log("FindNearestEnemy: enemies is empty");
@@ -61,8 +60,7 @@ public class FindNearestEnemy : BasePrimitiveAction
 
     private Unit FindEssentialUnit()
     {
-        List<Unit> enemies = selectedUnit.unitCombat.EnemiesInAttackRange(selectedUnit.unitOwner.attackMask);
-        //List<Unit> enemies = selectedUnit.unitCombat.EnemiesInAttackRange(AI.instance.attackMask);
+        List<Unit> enemies = selectedUnit.unitCombat.EnemiesInAttackRange(AI.instance.attackMask);
         if (enemies.Count == 0)
         {
             Debug.Log("FindNearestEnemy: enemies is empty");
@@ -80,8 +78,7 @@ public class FindNearestEnemy : BasePrimitiveAction
 
     private Unit FindLowestHealthUnit()
     {
-        List<Unit> enemies = selectedUnit.unitCombat.EnemiesInAttackRange(selectedUnit.unitOwner.attackMask);
-        //List<Unit> enemies = selectedUnit.unitCombat.EnemiesInAttackRange(AI.instance.attackMask);
+        List<Unit> enemies = selectedUnit.unitCombat.EnemiesInAttackRange(AI.instance.attackMask);
         if (enemies.Count == 0)
         {
             Debug.Log("FindNearestEnemy: enemies is empty");

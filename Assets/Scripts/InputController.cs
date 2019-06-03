@@ -25,6 +25,8 @@ public class InputController : MonoBehaviour
     //Last mouse position different than current
     private Vector3 lastMousePosition;
 
+    public TestJavaScript tjs;
+
 
 
  
@@ -128,6 +130,10 @@ public class InputController : MonoBehaviour
                     else if (Input.GetKey("space"))
                     {
                         gameManager.MoveUnit();
+                    }
+                    else if(Input.GetKey("f"))
+                    {
+                        tjs.UseJavaClass();
                     }
                     inputDelay = inputDelayDefault * Time.deltaTime;
                 }

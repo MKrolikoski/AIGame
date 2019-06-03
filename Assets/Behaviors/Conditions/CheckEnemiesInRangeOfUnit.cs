@@ -13,14 +13,10 @@ public class CheckEnemiesInRangeOfUnit : ConditionBase
 
     public override bool Check()
     {
-        //List<Unit> enemies = selectedUnit.unitCombat.EnemiesInAttackRange(AI.instance.attackMask);
-        List<Unit> enemies = selectedUnit.unitCombat.EnemiesInAttackRange(selectedUnit.unitOwner.attackMask);
-
-        if (enemies.Count == 0)
+        List<Unit> enemies = selectedUnit.unitCombat.EnemiesInAttackRange(AI.instance.attackMask);
+        if(enemies.Count == 0)
         {
-            //AI.instance.checkedUnits.Add(selectedUnit);
-            selectedUnit.unitOwner.checkedUnits.Add(selectedUnit);
-
+            AI.instance.checkedUnits.Add(selectedUnit);
             return false;
         }
         return true;

@@ -35,8 +35,7 @@ public class FindEnemyAtDistance : BasePrimitiveAction
 
     private Unit FindClosestEnemy()
     {
-        //List<Unit> enemies = Player.instance.units;
-        List<Unit> enemies = GameManager.instance._inactivePlayer.units;
+        List<Unit> enemies = Player.instance.units;
         int enemyDistance = selectedUnit.unitCombat.DistanceToEnemy(enemies[0]);
         Unit closestEnemy = enemies[0];
         foreach (Unit enemy in enemies)
@@ -53,9 +52,7 @@ public class FindEnemyAtDistance : BasePrimitiveAction
 
     private Unit FindEssentialEnemy()
     {
-        //List<Unit> enemies = Player.instance.units;
-        List<Unit> enemies = GameManager.instance._inactivePlayer.units;
-
+        List<Unit> enemies = Player.instance.units;
         int enemyDistance = 0;
         int lastEnemyDistance = 0;
         Unit closestEnemy = null;
