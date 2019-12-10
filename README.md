@@ -24,7 +24,16 @@ Turn-based game created for my university project. Implements behavior trees in 
 - click the button in the bottom of the screen saying "end turn".
 ==========================================
 
-# Preview
+# =============SCREENSHOTS=============
 
+# Movement
 ![GameplayScreenshot1](/Assets/Screenshots/GameplayScreenshot1.png)
+# Combat
 ![GameplayScreenshot2](/Assets/Screenshots/GameplayScreenshot2.png)
+# Board structure
+![GameplayScreenshot3](/Assets/Screenshots/board_with_buildings.png)
+# Pathfinding
+![GameplayScreenshot4](/Assets/Screenshots/pathfinding.png)
+# UI
+![GameplayScreenshot5](/Assets/Screenshots/ui.png)
+
